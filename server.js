@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/angular-pokedex'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/angular-pokedex/'}),
+    res.sendFile('home.html', {root: 'dist/angular-pokedex/'}),
 );
 
 // Start the app by listening on the default Heroku port
